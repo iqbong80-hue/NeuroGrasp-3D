@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+input[type="range"].grip-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+input[type="range"].grip-slider::-webkit-slider-runnable-track {
+  height: 8px;
+  border-radius: 4px;
+}
+
+input[type="range"].grip-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #F8FAFC;
+  border: 2px solid #0E1624;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  margin-top: -6px;
+  transition: transform 150ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+input[type="range"].grip-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.12);
+}
+
+input[type="range"].grip-slider:focus-visible {
+  outline: 2px solid #38BDF8;
+  outline-offset: 4px;
+}

@@ -1,0 +1,8 @@
+{
+  "name": "NeuroGrasp 3D — BCI Robotic Tactile Simulation",
+  "description": "Interactive 3D physics simulation of a neural-controlled robotic hand grasping a fragile egg with real-time EEG motor decoding, grip force telemetry, and shell structural integrity mechanics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
